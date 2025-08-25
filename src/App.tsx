@@ -5,7 +5,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { ChangeEvent, useState } from 'react';
-import { names, colors, createUrl } from './src/Generator';
+import { tiles, createUrl } from './Generator';
 import './style.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -67,8 +67,7 @@ export default function App() {
           </Form.Label>
           <Col>
             <Form.Select value={fid} onChange={onTypeChange}>
-              {mapOptions(names)}
-              {mapOptions(colors)}
+              {mapOptions(tiles)}
             </Form.Select>
           </Col>
         </Form.Group>

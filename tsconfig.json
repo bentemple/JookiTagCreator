@@ -6,5 +6,6 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "typeRoots": ["./@types"]
+    "jsx": "react-jsx"
   }
 }
